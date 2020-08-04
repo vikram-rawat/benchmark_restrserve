@@ -24,7 +24,7 @@ app$add_get(
 app$add_get(
   path = "/user/{id}",
   FUN = get_userid,
-  match = "exact"
+  match = "regex"
 )
 
 ### /user post route

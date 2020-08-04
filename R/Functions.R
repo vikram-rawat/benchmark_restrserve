@@ -8,7 +8,7 @@ serve_main <- function(req, res) {
 # func_UserId ----------------------------
 
 get_userid <- function(req, res) {
-  id = req$get_param_path("id")
+  id <- req$parameters_path
   res$set_body(id)
 }
 
